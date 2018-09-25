@@ -7,14 +7,14 @@ class TreeBuilder {
 
     build() {
         let frequencyTable = this.buildFrequencyTable()
-        let combinedList = this.combineTable(frequencyTable);
+        let combinedList = this.combineTable(frequencyTable)
         return Tree.decodeTree(this.compressCombinedTable(combinedList))
     }
 
     buildFrequencyTable() {
         let tableHash = {}
 
-        let chr;
+        let chr
         for (let i = 0; i < this.text.length; i ++) {
             chr = this.text.charAt(i)
             if (tableHash[chr] !== undefined && tableHash[0] !== null) {
@@ -24,14 +24,13 @@ class TreeBuilder {
             }
         }
 
-
         let table = []
         
         for (chr in tableHash) {
             table.push([tableHash[chr], chr])
         }
 
-        table.sort(this.frequencySorter);
+        table.sort(this.frequencySorter)
         return table
     }
 
@@ -59,7 +58,7 @@ class TreeBuilder {
     }
 
     compressCombinedTable(table) {
-        let value = table[1];
+        let value = table[1]
         return Array.isArray(value) ? 
             [this.compressCombinedTable(value[0]), this.compressCombinedTable(value[1])] : value
     }

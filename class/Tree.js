@@ -83,7 +83,7 @@ class Tree {
             this.leafCache[node.value] = path
             return path
         } else {
-            this.generateLeafCache(node.left, path + '0');
+            this.generateLeafCache(node.left, path + '0')
             return this.generateLeafCache(node.right, path + '1')
         }
     }

@@ -1,6 +1,6 @@
 let Huffman = require('./class/Huffman')
 
-let lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.';
+let lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.'
 
 let huffmanTree = new Huffman(lorem)
 
