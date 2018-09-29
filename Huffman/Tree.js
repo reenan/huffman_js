@@ -54,7 +54,7 @@ class Tree {
         let pieces = bitString.split('')
         let pad = parseInt(pieces.pop())
         
-        let paddedPieces = pieces.reduce((current, chr, i, pieces) => {
+        let paddedPieces = pieces.reduce((current, chr) => {
             current.push(Helper.prototype.lpad(chr.charCodeAt(0).toString(2)))
             return current
         }, [])
