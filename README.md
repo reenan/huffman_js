@@ -1,5 +1,6 @@
+# Membros
+Trabalho desenvolvido por [Renan Souza](https://github.com/reenan/), [Julio Renner](https://github.com/juliorenner) e [Lucas Schneider](https://github.com/schneiderl)
 # huffman_js
-
 O objetivo do presente é descrever a elaboração de uma solução computacional capaz de compactar e descompactar arquivos sem perda de informação durante o processo. Abaixo é descrito quais as decisões tomadas pelo algoritmo final e quais pipelines foram empregadas.
 
 
