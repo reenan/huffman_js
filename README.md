@@ -7,7 +7,7 @@ O objetivo do presente é descrever a elaboração de uma solução computaciona
 # Implementação
 
 Foram implementados três diferentes algoritmos de compactação: Huffman, Método de Burrows-Wheeler e o algoritmo de Move To Front.
-É notável a diferença entre taxas de compressão de acordo com a diferença na ordem da pipeline. A considerada mais satisfatória foi BWT -> MTF -> Huffman, que é capaz de codificar codificar grandes arquivos com uma melhor taxa de compressão.
+É notável a diferença entre taxas de compressão de acordo com a diferença na ordem da pipeline. A considerada mais satisfatória foi BWT -> MTF -> Huffman, que é capaz de codificar grandes arquivos com uma melhor taxa de compressão.
 
 Já para arquivos menores, notamos que a utilização de Huffman por si só se provou ser melhor do que a aplicação da pipeline utilizando os três algoritmos.
 
